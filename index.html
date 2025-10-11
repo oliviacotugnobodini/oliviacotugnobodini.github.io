@@ -82,6 +82,32 @@
             display: block;
         }
 
+        .dictionary-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            display: block;
+            text-align: center;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .dictionary-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .dictionary-card h2 {
+            font-size: 2em;
+            color: #667eea;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2em;
@@ -95,17 +121,17 @@
 </head>
 <body>
     <div class="container">
+        <a href="https://placeholder-url.com" class="dictionary-card">
+            <span class="icon">📖</span>
+            <h2>Diccionario de variables</h2>
+        </a>
+
         <div class="header">
             <h1>Visualizaciones Interactivas</h1>
             <p class="subtitle">Selecciona una visualización para explorar</p>
         </div>
 
         <div class="cards">
-            <a href="https://placeholder-url.com" class="card">
-                <span class="icon">📖</span>
-                <h2>Diccionario de variables</h2>
-            </a>
-
             <a href="grafico_interactivo.html" class="card">
                 <span class="icon">📊</span>
                 <h2>Figura 7</h2>
